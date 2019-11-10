@@ -37,7 +37,8 @@
     /* 裁剪内容 - 提供滚动机制 */
     overflow-y: scroll;
     /* background-color: yellowgreen; */
-    height: calc(100% - 54px);
+    /* height: calc(100% - 54px); */
+    height: 680px;
     /* border: 1px solid black; */
 }
 
@@ -116,7 +117,7 @@
 }
 
 .comment:before{
-    position: absolute;
+    position: relative;
     display: block;
     top:19px；
     width：8px;
