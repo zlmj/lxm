@@ -1,3 +1,15 @@
+/* 在声明全局 CSS 变量*/
+:root {
+    --white: #fff;
+    --black: #000;
+    --bg: #f8f8f8;
+    --grey: #999;
+    --dark: #1a1a1a;
+    --light: #e6e6e6;
+    --wrapper: 1000px;
+    --blue: #00b0ff;
+}
+
 .container{
     height: 100%;
 }
@@ -22,6 +34,71 @@
     color:black;
 }
 
+.list_1{
+    width: 100%;
+    float: left;
+    height: 500px;
+    /* background-color: var(--black); */
+    position: relative;
+    float: left;
+}
+
+/* 单条记录 */
+.list_2{
+    height: 80px;
+    /* background-color: yellow; */
+    position: relative;
+    /* border-bottom-style:  solid; */
+    border-color:var(--light);
+    /* border:1px; */
+}
+
+
+.list_3{
+    width: 50px;
+    height: 50px;   
+    float: left;
+    position: absolute; 
+}
+
+
+/* 讨论组标题 */
+.list_4{
+    padding: 5px 5px;
+    margin-top: 5px;
+    float: left;
+    max-width: 230px;
+    overflow:hidden;
+    width: 200px;
+    height: 25px;
+    margin-left: 56px;
+
+}
+
+/* 讨论组时间 */
+.list_time{
+    float: right;
+    margin-top: 8px;
+    position: absolute;
+    font-size: 13px;
+}
+
+/* 讨论组内容 */
+.list_5{
+    float: left;
+    position: relative;
+    margin-top: 42px;
+    margin-left: -197px;
+}
+
+/* 列表点击改变样式 */
+.list_2.active{
+    background-color:var(--blue);
+}
+.list_2:hover{
+    background-color: var(--blue);
+}
+
 
 .content{
     /* border: 1px solid black; */
@@ -38,7 +115,7 @@
     overflow-y: scroll;
     /* background-color: yellowgreen; */
     /* height: calc(100% - 54px); */
-    height: 680px;
+    height: 623px;
     /* border: 1px solid black; */
 }
 
